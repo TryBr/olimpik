@@ -1,0 +1,102 @@
+.news
+    margin-top: 90px
+    .news-top-panel
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 30px
+    .news__title
+        font-style: normal
+        font-weight: 500
+        font-size: 36px
+        color: #4F4F4F
+        align-self: center
+    .news__more
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        text-align: right
+        color: #2D3E69
+        align-self: center
+        text-decoration: none
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            transform: scaleX(0)
+            border-radius: 5px
+            height: 1px
+            bottom: 0
+            left: 0
+            background: #2D3E69
+            transform-origin: bottom right
+            transition: transform 0.25s ease-out
+        &:hover
+            &::before
+                transform: scaleX(1)
+                transform-origin: bottom left
+
+    .news-items
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: flex-start
+    .news-item
+        margin-right: 32px
+        width: 296px
+        &.news-item-main
+            width: 624px
+
+        &:last-child
+            margin-right: 0px
+        .item-photo
+            position: relative
+            width: 100%
+            height: 200px
+            border-radius: 8px
+            overflow: hidden
+            margin-bottom: 20px
+            .item-photo__img
+                object-position: center center
+                object-fit: cover
+                height: 200px
+                width: 100%
+            .item-photo__label
+                position: absolute
+                top: 12px
+                left: 0px
+                text-align: center
+                font-style: normal
+                font-weight: 500
+                font-size: 15px
+                color:#4F4F4F
+                background: #F5F5F7
+                border-radius: 0px 4px 4px 0px
+                padding: 2px 8px
+            
+        .item-photo__date
+            position: absolute
+            font-style: normal
+            font-weight: 500
+            font-size: 15px
+            color: #FFFFFF
+            left: 12px
+            bottom: 9px
+        .item__title
+            font-style: normal
+            font-weight: 500
+            font-size: 21px
+            line-height: 24px
+            color: #4F4F4F
+            margin-bottom: 10px
+            .item__link
+                text-decoration: none
+                color: #4F4F4F
+        .item__text
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 24px
+            color: #4F4F4F

@@ -1,0 +1,32 @@
+@import vars
+@import fonts
+@import libs
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Rubik', sans-serif
+	background: #ffffff
+
+html, body
+	height: 100%
+
+@media (min-width: 1200px)
+	.container 
+		max-width: 1280px
+
+
+.hidden
+	display: none
+
+.container
+	padding: 0px
+
+// components
+@import "_global.sass"
+@import "_fonts.sass"
+@import "_buttons.sass"
+@import "_libs.sass"
+
