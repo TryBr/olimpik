@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     $(window).on('scroll', function() {
         scrollPosition = $(this).scrollTop();
-        if (scrollPosition >= 250) {
-            $(".header-sticky").addClass("active");
+        if (scrollPosition > 300) {
+            $(".header").addClass("sticky");
         } else {
-            $(".header-sticky").removeClass("active");
+            $(".header").removeClass("sticky");
         }
     });
 
