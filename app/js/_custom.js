@@ -67,5 +67,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
             $(this).closest(".slider-item").find(".item-price-2").removeClass("hidden");
 		}
 	});
-    
 });

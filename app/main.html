@@ -18,7 +18,7 @@
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.min.css?v=2">
+	<link rel="stylesheet" href="css/styles.min.css?v=3">
 </head>
 
 <body class="sticky-header">
@@ -948,6 +948,23 @@
 				<div class="col-lg-12">
 					<div class="counter-wrapper">
 						<div class="counter-man"></div>
+						<div class="tick-wrapper">
+							<h3 class="counter__title">Мы продали</h3>
+							<div class="tick"
+								data-value="130249076"
+								data-did-init="setupFlip">
+							
+								<!-- Hide visual content from screenreaders with `aria-hidden` -->
+								<div data-repeat="true" aria-hidden="true">
+									<span data-view="flip"></span>
+								</div>
+							
+							</div>
+							<p class="counter__text">
+								м2 напольных покрытий <br>
+								с 1994 года
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1494,6 +1511,20 @@
 		</div>
 	</footer>
 
-	<script src="js/scripts.min.js?v=2"></script>
+	<script src="js/scripts.min.js?v=3"></script>
+	<script>
+		function setupFlip(tick) {
+
+			Tick.helper.interval(function() {
+
+				tick.value++;
+
+				// Set `aria-label` attribute which screenreaders will read instead of HTML content
+				tick.root.setAttribute('aria-label', tick.value);
+
+			}, 5000);
+
+		}
+	</script>
 </body>
 </html>
