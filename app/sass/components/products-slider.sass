@@ -4,6 +4,7 @@
         height: 100%
         overflow: visible
     .swiper-slide
+        // width: 216px !important
         background: #fff
         display: -webkit-box
         display: -ms-flexbox
@@ -17,6 +18,7 @@
         -ms-flex-align: center
         -webkit-align-items: center
         align-items: center
+
     .swiper-button-next
         background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cellipse cx='23.5' cy='19.0425' rx='19' ry='19.0425' fill='white'/%3E%3C/g%3E%3Cpath d='M14.5 18.0425C13.9477 18.0425 13.5 18.4902 13.5 19.0425C13.5 19.5948 13.9477 20.0425 14.5 20.0425V18.0425ZM33.2071 19.7496C33.5976 19.3591 33.5976 18.7259 33.2071 18.3354L26.8431 11.9714C26.4526 11.5809 25.8195 11.5809 25.4289 11.9714C25.0384 12.3619 25.0384 12.9951 25.4289 13.3856L31.0858 19.0425L25.4289 24.6993C25.0384 25.0899 25.0384 25.723 25.4289 26.1135C25.8195 26.5041 26.4526 26.5041 26.8431 26.1135L33.2071 19.7496ZM14.5 20.0425H32.5V18.0425H14.5V20.0425Z' fill='%239E9E9E'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.5' y='0' width='46' height='46.085' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.716667 0 0 0 0 0.69875 0 0 0 0 0.69875 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
         width: 47px
@@ -71,6 +73,34 @@
                 transform: scaleX(1)
                 transform-origin: bottom left
 
+    .slider__more__mobile
+        display: none
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        text-align: center
+        color: #2D3E69
+        align-self: center
+        text-decoration: none
+        position: relative
+        margin-top: 40px
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            transform: scaleX(0)
+            border-radius: 5px
+            height: 1px
+            bottom: 0
+            left: 0
+            background: #2D3E69
+            transform-origin: bottom right
+            transition: transform 0.25s ease-out
+        &:hover
+            &::before
+                transform: scaleX(1)
+                transform-origin: bottom left
+
 
     .slider-items
         display: flex
@@ -91,7 +121,7 @@
                 margin-bottom: 14px
                 .item-photo__img
                     object-position: center center
-                    object-fit: cover
+                    object-fit: fill
                     height: 184px
                     width: 100%
                 .item-photo__label
@@ -175,6 +205,7 @@
                 color: #2D3E69
                 margin-bottom: 14px
                 padding-right: 14px
+                min-height: 72px
                 .item__title__link
                     color: #2D3E69
             .item__text
@@ -212,21 +243,19 @@
                             border-radius: 0px 4px 4px 0px
                             border: 1px solid #EAEAEA
                             background: #ffffff
-                    .item-params-param__radio
-                        display: none
-                        &:checked
-                            & + .item-params-param
-                                padding: 4px 10px
-                                background: linear-gradient(180deg, #F7F3F3 0%, #E2E2E2 100%)
-                                border-radius: 4px 0px 0px 4px
-                                font-style: normal
-                                font-weight: normal
-                                font-size: 14px
-                                color: #000000
-                                margin-bottom: 0px
-                                cursor: pointer
-                                &:last-child
-                                    border-radius: 0px 4px 4px 0px
+                        &.active
+                            padding: 4px 10px
+                            background: linear-gradient(180deg, #F7F3F3 0%, #E2E2E2 100%)
+                            border-radius: 4px 0px 0px 4px
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            color: #000000
+                            margin-bottom: 0px
+                            cursor: pointer
+                            &:last-child
+                                border-radius: 0px 4px 4px 0px
+
 
                 .item-add-btns
                     display: flex
@@ -404,3 +433,63 @@
                         font-size: 14px
                         color: #FFFFFF
                         line-height: 34px
+
+@media (min-width: 768px) and (max-width: 1300px)
+    .products-slider
+        .slider-top-panel
+            justify-content: center
+        .swiper-container
+            width: 100%
+            height: 100%
+            overflow: hidden
+        .slider-items
+            padding: 0px
+            margin: 0px
+        .slider__title
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            text-align: center
+            color: #4F4F4F
+        .slider__more
+            display: none
+        .slider__more__mobile
+            display: block
+
+        .swiper-button-prev
+            left: 10px
+            top: 95px
+        .swiper-button-next
+            right: 10px
+            top: 95px
+
+@media (min-width: 320px) and (max-width: 767px)
+    .products-slider
+        .slider-top-panel
+            justify-content: center
+        .swiper-container
+            width: 100%
+            height: 100%
+            overflow: hidden
+        .slider-items
+            padding: 0px
+            margin: 0px
+        .slider__title
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            text-align: center
+            color: #4F4F4F
+        .slider__more
+            display: none
+        .slider__more__mobile
+            display: block
+
+        .swiper-button-prev
+            left: 10px
+            top: 95px
+            display: none
+        .swiper-button-next
+            right: 10px
+            top: 95px
+            display: none

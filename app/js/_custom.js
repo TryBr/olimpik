@@ -4,11 +4,57 @@ document.addEventListener("DOMContentLoaded", function(event) {
         slidesPerView: 5,
         spaceBetween: 40,
         loop: false,
-        allowTouchMove: false,
+        allowTouchMove: true,
         navigation: {
             nextEl: '.swiper-button-next-ps1',
             prevEl: '.swiper-button-prev-ps1',
         },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            374: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            375: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            640: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            850: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            1300: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                centeredSlides: false,
+                initialSlide: 0
+            }
+        }
     }); 
     
     var swiper2 = new Swiper(".productsSlider2", {
@@ -19,6 +65,52 @@ document.addEventListener("DOMContentLoaded", function(event) {
             nextEl: '.swiper-button-next-ps2',
             prevEl: '.swiper-button-prev-ps2',
         },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            374: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            375: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            640: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            850: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            1300: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                centeredSlides: false,
+                initialSlide: 0
+            }
+        }
     }); 
 
     var swiper3 = new Swiper(".productsSlider3", {
@@ -29,6 +121,52 @@ document.addEventListener("DOMContentLoaded", function(event) {
             nextEl: '.swiper-button-next-ps3',
             prevEl: '.swiper-button-prev-ps3',
         },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            374: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            375: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            640: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            850: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            1300: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                centeredSlides: false,
+                initialSlide: 0
+            }
+        }
     }); 
 
 
@@ -40,31 +178,124 @@ document.addEventListener("DOMContentLoaded", function(event) {
             nextEl: '.swiper-button-next-bs',
             prevEl: '.swiper-button-prev-bs',
         },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            374: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            375: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            640: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            850: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                centeredSlides: false,
+                initialSlide: 0
+            },
+            1300: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                centeredSlides: false,
+                initialSlide: 0
+            }
+        }
+    }); 
+
+    var swiper5 = new Swiper(".why-us-slider", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        allowTouchMove: true,
+        pagination: {
+            el: '.swiper-pagination-wus',
+            type: 'bullets',
+        },
     }); 
 
     $(window).on('scroll', function() {
         scrollPosition = $(this).scrollTop();
         if (scrollPosition > 300) {
             $(".header").addClass("sticky");
+            $(".header-catalog-menu").removeClass("active");
         } else {
             $(".header").removeClass("sticky");
         }
     });
 
-    // параметры
-	$('.item-params-param__radio').change(function(){
-        if (this.checked && this.value == '1') {
-            $(this).closest(".slider-item").find(".item-price-2").addClass("hidden");
-            $(this).closest(".slider-item").find(".item-price-2").removeClass("active");
+    // params
+    $(".item-params-param").click(function() { 
+	    let itemParam = $(this),
+            itemDataPrice = $(this).data("price"),
+            itemParent = $(this).closest(".slider-item");
 
-            $(this).closest(".slider-item").find(".item-price-1").addClass("active");
-            $(this).closest(".slider-item").find(".item-price-1").removeClass("hidden");
-		} else {
-            $(this).closest(".slider-item").find(".item-price-1").addClass("hidden");
-            $(this).closest(".slider-item").find(".item-price-1").removeClass("active");
+        if (itemDataPrice == '1') {
+            itemParent.find(".item-params-param").removeClass("active");
+            itemParam.addClass("active");
+            itemParent.find(".item-price").removeClass("active hidden");
+            itemParent.find(".item-price-2").addClass("hidden");
+            itemParent.find(".item-price-1").addClass("active");
+        } else {
+            itemParent.find(".item-params-param").removeClass("active");
+            itemParam.addClass("active");
+            itemParent.find(".item-price").removeClass("active hidden");
+            itemParent.find(".item-price-1").addClass("hidden");
+            itemParent.find(".item-price-2").addClass("active");
+        }
+    });
 
-            $(this).closest(".slider-item").find(".item-price-2").addClass("active");
-            $(this).closest(".slider-item").find(".item-price-2").removeClass("hidden");
-		}
-	});
+
+    // catalog menu open
+    $('.header-catalog-btn').click(function(e) { 
+        e.preventDefault();
+
+	    const headerCatalogMenu = $(".header-catalog-menu");
+    
+        if (headerCatalogMenu.hasClass("active")) {
+            headerCatalogMenu.removeClass("active");
+        } else {
+            headerCatalogMenu.addClass("active");
+        }
+    });
+
+    // catalog menu
+    $(".catalog-menu-item__link").click(function(e) { 
+        e.preventDefault();
+
+        let item = $(this),
+            itemCatalogId = item.data("catalog-id");
+
+        $(".catalog-menu-item__link").removeClass("active");
+        item.addClass("active");
+
+        $('.catalog-menu-container').removeClass("active");
+        $(`#${itemCatalogId}-menu`).addClass("active");
+
+
+    });
+
 });

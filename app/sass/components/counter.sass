@@ -36,6 +36,7 @@
         position: absolute
         right: 0px
         top: 20px
+        min-width: 560px
 
     .tick 
         white-space: nowrap
@@ -102,10 +103,10 @@
     //     background: linear-gradient(180deg, #032781 -14.29%, #65759F 100%), linear-gradient(180deg, #1B3F9C -14.29%, #65759F 100%) !important
 
     .tick-flip-panel-front.tick-flip-panel
-        background: linear-gradient(180deg, #032781 -14.29%, #65759F 100%), linear-gradient(180deg, #1B3F9C -14.29%, #65759F 100%) !important
+        background: #1B3F9C !important
 
     .tick-flip-panel-back.tick-flip-back
-        background: linear-gradient(180deg, #032781 -14.29%, #65759F 100%), linear-gradient(180deg, #1B3F9C -14.29%, #65759F 100%)
+        background: #032781 !important
         transform: matrix(1, 0, 0, -1, 0, 0)
 
 
@@ -119,3 +120,111 @@
     .tick-flip-panel-back-shadow
         display: none !important
         background-image: none !important
+
+@media (min-width: 768px) and (max-width: 1300px)
+    .counter
+        .tick-wrapper
+            position: relative
+            left: 0px
+            right: 0px
+            top: 65px
+            min-width: auto
+        .counter-wrapper
+            max-width: 100%
+            .counter-man
+                display: none
+            .counter__title
+                font-size: 24px
+                text-align: center
+            .counter__text
+                font-size: 18px
+                line-height: 21px
+                text-align: center
+
+        .tick 
+            white-space: nowrap
+            font-size: 29px
+            text-align: center
+            .layout
+                font-size: 29px !important
+
+
+        .tick-flip, .tick-text-inline 
+            font-size: 29px
+
+
+        .tick-label
+            margin-top: 1em
+            font-size: 29px
+
+@media (min-width: 321px) and (max-width: 767px)
+    .counter
+        .tick-wrapper
+            position: relative
+            left: 0px
+            right: 0px
+            top: 65px
+            min-width: auto
+        .counter-wrapper
+            max-width: 100%
+            .counter-man
+                display: none
+            .counter__title
+                font-size: 24px
+                text-align: center
+            .counter__text
+                font-size: 18px
+                line-height: 21px
+                text-align: center
+
+        .tick 
+            white-space: nowrap
+            font-size: 29px
+            text-align: center
+            .layout
+                font-size: 29px !important
+
+
+        .tick-flip, .tick-text-inline 
+            font-size: 29px
+
+
+        .tick-label
+            margin-top: 1em
+            font-size: 29px
+
+@media (min-width: 300px) and (max-width: 320px)
+    .counter
+        .tick-wrapper
+            position: relative
+            left: 0px
+            right: 0px
+            top: 65px
+            min-width: auto
+        .counter-wrapper
+            max-width: 100%
+            .counter-man
+                display: none
+            .counter__title
+                font-size: 24px
+                text-align: center
+            .counter__text
+                font-size: 18px
+                line-height: 21px
+                text-align: center
+
+        .tick 
+            white-space: nowrap
+            font-size: 24px
+            text-align: center
+            .layout
+                font-size: 24px !important
+
+
+        .tick-flip, .tick-text-inline 
+            font-size: 24px
+
+
+        .tick-label
+            margin-top: 1em
+            font-size: 24px

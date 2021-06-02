@@ -1,6 +1,8 @@
 .why-us
     margin-top: 90px
     margin-bottom: 90px
+    &.why-us-mobile
+        display: none
     .why-us__title
         font-style: normal
         font-weight: 500
@@ -145,3 +147,96 @@
                     height: 240px
                     padding-top: 37px
                     text-align: center
+
+
+@media (min-width: 768px) and (max-width: 1300px)
+    .why-us
+        margin-top: 70px
+        margin-bottom: 70px
+        display: none
+        .swiper-pagination
+            bottom: 20px
+        .swiper-pagination-bullet
+            background: #FFFFFF
+            border: 2px solid #80BA53
+            width: 16px
+            height: 16px
+            opacity: 1
+            margin: 0 16px !important
+            &.swiper-pagination-bullet-active
+                background: #80BA53
+                border: 2px solid #80BA53
+
+        .swiper-container
+            padding-top: 50px
+            padding-bottom: 50px
+            margin-top: -30px
+        &.why-us-mobile
+            display: block
+        .why-us-puzzles
+            .why-us-puzzles-item
+                float: none !important
+                margin: 0 auto !important
+
+        .why-us__title
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            align-self: center
+            margin-bottom: 40px
+
+@media (min-width: 320px) and (max-width: 767px)
+    .why-us
+        margin-top: 70px
+        margin-bottom: 70px
+        display: none
+        .swiper-pagination
+            bottom: 20px
+        .swiper-pagination-bullet
+            background: #FFFFFF
+            border: 2px solid #80BA53
+            width: 16px
+            height: 16px
+            opacity: 1
+            margin: 0 16px !important
+            &.swiper-pagination-bullet-active
+                background: #80BA53
+                border: 2px solid #80BA53
+
+        .swiper-container
+            padding-top: 50px
+            padding-bottom: 50px
+            margin-top: -30px
+        &.why-us-mobile
+            display: block
+        .why-us-puzzles
+            .why-us-puzzles-item
+                float: none !important
+                margin: 0 auto !important
+                &.item-1
+                    margin-right: -10px !important
+                &.item-4
+                    margin-right: -10px !important
+                &.item-5
+                    margin-top: -50px !important
+
+        .why-us__title
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            align-self: center
+            margin-bottom: 40px
+
+
+@media (min-width: 300px) and (max-width: 320px)
+    .why-us
+        .why-us-puzzles
+            .why-us-puzzles-item
+                &.item-1
+                    margin-left: 20px !important
+                &.item-3
+                    margin-left: -35px !important
