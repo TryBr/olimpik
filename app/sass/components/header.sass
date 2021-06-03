@@ -5,12 +5,10 @@
         background: #FFFFFF
         z-index: 10
         box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04)
-        transition: all .2s ease-in-out
+        // transition: all .2s ease-in-out
         top: 0px
         left: 0px
         right: 0px
-        & + .banner
-            margin-top: 192px
         .header-top-panel
             opacity: 0
             display: none
@@ -464,6 +462,8 @@
         display: none
         &.active
             display: block
+        &.fixed
+            top: 66px
         .container
             max-width: 1340px
         .catalog-menu-wrapper
@@ -562,7 +562,10 @@
                 padding-top: 50px
                 padding-left: 50px
                 width: 100%
+                position: relative
                 .catalog-menu-container
+                    overflow: hidden
+                    height: 650px
                     display: none
                     &.active
                         display: block
@@ -577,11 +580,14 @@
                     list-style: none
                     margin: 0px
                     padding: 0px
-                    margin-top: 40px
+                    margin-top: 0px
                     display: flex
                     flex-direction: row
                     justify-content: flex-start
                     align-items: flex-start
+                    position: absolute
+                    left: 50px
+                    bottom: 30px
                     .catalog-brands-menu-item
                         margin-right: 40px
                         &:last-child

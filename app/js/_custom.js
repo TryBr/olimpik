@@ -182,13 +182,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         breakpoints: {
             // when window width is >= 320px
             320: {
-                slidesPerView: 1,
-                spaceBetween: 0,
+                slidesPerView: 1.5,
+                spaceBetween: 30,
                 centeredSlides: false,
                 initialSlide: 0
             },
             374: {
-                slidesPerView: 1,
+                slidesPerView: 1.5,
                 spaceBetween: 0,
                 centeredSlides: false,
                 initialSlide: 0
@@ -206,13 +206,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 initialSlide: 0
             },
             850: {
-                slidesPerView: 2,
+                slidesPerView: 2.5,
                 spaceBetween: 0,
                 centeredSlides: false,
                 initialSlide: 0
             },
             1024: {
-                slidesPerView: 3,
+                slidesPerView: 3.5,
                 spaceBetween: 30,
                 centeredSlides: false,
                 initialSlide: 0
@@ -240,10 +240,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $(window).on('scroll', function() {
         scrollPosition = $(this).scrollTop();
         if (scrollPosition > 300) {
+            $(".banner").addClass("sticky-header");
             $(".header").addClass("sticky");
-            $(".header-catalog-menu").removeClass("active");
+            $(".header-catalog-menu").addClass("fixed");
+            // $(".header-catalog-menu").removeClass("active");
         } else {
+            $(".banner").removeClass("sticky-header");
             $(".header").removeClass("sticky");
+            $(".header-catalog-menu").removeClass("fixed");
         }
     });
 
@@ -268,13 +272,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     });
 
+    var banner = new Swiper(".banner-swiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next-bn",
+          prevEl: ".swiper-button-prev-bn",
+        },
+    });
+
 
     // catalog menu open
     $('.header-catalog-btn').click(function(e) { 
         e.preventDefault();
 
 	    const headerCatalogMenu = $(".header-catalog-menu");
-    
+
+        let scrollPosition = $(window).scrollTop();
+        if (scrollPosition > 300) {
+            $(".header-catalog-menu").addClass("fixed");
+        } else {
+            $(".header-catalog-menu").removeClass("fixed");
+        }
+
         if (headerCatalogMenu.hasClass("active")) {
             headerCatalogMenu.removeClass("active");
         } else {
@@ -284,16 +303,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // catalog menu
     $(".catalog-menu-item__link").click(function(e) { 
-        e.preventDefault();
 
         let item = $(this),
             itemCatalogId = item.data("catalog-id");
 
-        $(".catalog-menu-item__link").removeClass("active");
-        item.addClass("active");
-
-        $('.catalog-menu-container').removeClass("active");
-        $(`#${itemCatalogId}-menu`).addClass("active");
+        if(itemCatalogId) {
+            e.preventDefault();
+            $(".catalog-menu-item__link").removeClass("active");
+            item.addClass("active");
+    
+            $('.catalog-menu-container').removeClass("active");
+            $(`#${itemCatalogId}-menu`).addClass("active");
+        }
 
 
     });
