@@ -121,7 +121,7 @@
                 margin-bottom: 14px
                 .item-photo__img
                     object-position: center center
-                    object-fit: contain
+                    object-fit: cover
                     height: 184px
                     width: 100%
                 .item-photo__label
@@ -265,6 +265,10 @@
                             background: linear-gradient(180deg, #F7F3F3 0%, #E2E2E2 100%) !important
                         &:last-child
                             border-radius: 0px 4px 4px 0px
+                            border: 1px solid #EAEAEA
+                            background: #ffffff
+                        &:only-child
+                            border-radius: 4px 4px 4px 4px
                             border: 1px solid #EAEAEA
                             background: #ffffff
                         &.active
