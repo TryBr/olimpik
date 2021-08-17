@@ -1,8 +1,8 @@
 .banner
     width: 100%
-    height: 504px
+    // height: 504px
     margin: 0 auto
-    margin-bottom: 90px
+    margin-bottom: 60px
     &.sticky-header
         margin-top: 192px
 
@@ -69,7 +69,16 @@
             text-align: left
     
 
-@media (min-width: 768px) and (max-width: 1300px)
+
+@media (min-width: 1025px) and (max-width: 1300px)
+    .banner
+        margin-bottom: 50px
+        display: block
+        height: auto
+        .banner__img
+            object-fit: cover
+
+@media (min-width: 768px) and (max-width: 1024px)
     .banner
         margin-bottom: 50px
         display: none

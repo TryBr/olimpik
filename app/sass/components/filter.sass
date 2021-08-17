@@ -1,0 +1,223 @@
+.filter-wrapper
+    height: auto
+    border: 1px solid #BDBDBD
+    box-sizing: border-box
+    border-radius: 8px
+    padding-top: 25px
+    padding-left: 25px
+    padding-right: 25px
+    margin-bottom: 50px
+    margin-top: -45px
+    &.show
+      display: block
+
+    .filter-btn__submit
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      color: #FFFFFF
+      background: #2D3E69
+      border-radius: 4px
+      text-align: center
+      height: 40px
+      line-height: 40px
+      margin-bottom: 16px
+      border: none
+      width: 100%
+    .filter-btn__reset
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      color: #2D3E69
+      border: none
+      background: none
+      width: 100%
+    
+
+    .filter-block
+        margin-bottom: 40px
+        overflow: hidden
+        clear: both
+        &:last-child
+          margin-bottom: 30px
+    .filter-block__title
+        font-family: Rubik
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        color: #000000
+        margin-bottom: 20px
+
+
+    .checkbox-wrapper
+      display: flex
+      flex-wrap: wrap
+      align-content: flex-start
+
+    .checkbox 
+      margin-bottom: 5px
+      margin-right: 50px
+      width: 30%
+      &:nth-child(2n+2)
+        margin-right: 0px
+        
+    .custom-checkbox
+      margin-bottom: 0px
+
+    /* для элемента input c type="checkbox" */
+    .custom-checkbox>input 
+      position: absolute
+      z-index: -1
+      opacity: 0
+    
+
+    /* для элемента label, связанного с .custom-checkbox */
+    .custom-checkbox>span 
+      display: inline-flex
+      align-items: center
+      user-select: none
+      cursor: pointer
+      color: #808080
+    
+
+    /* создание в label псевдоэлемента before со следующими стилями */
+    .custom-checkbox>span::before 
+      content: ''
+      display: inline-block
+      width: 16px
+      height: 16px
+      flex-shrink: 0
+      flex-grow: 0
+      border: 1px solid #BDBDBD
+      border-radius: 2px
+      margin-right: 8px
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 50% 50%
+    
+
+    /* стили при наведении курсора на checkbox */
+    .custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before 
+      border-color: #2D3E69
+    
+
+    /* стили для активного чекбокса (при нажатии на него) */
+    .custom-checkbox>input:not(:disabled):active+span::before 
+      background-color: #2D3E69
+      border-color: #2D3E69
+  
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+    .custom-checkbox>input:focus:not(:checked)+span::before 
+      border-color: #BDBDBD
+    
+
+    /* стили для чекбокса, находящегося в состоянии checked */
+    .custom-checkbox>input:checked+span::before 
+      border-color: #2D3E69
+      background-color: #2D3E69
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.52414 0.262233C9.88327 0.620738 9.89331 1.21237 9.54656 1.58368L5.45917 7.42917C4.7484 8.19028 3.56887 8.19028 2.85811 7.42917L0.453828 4.85459C0.107081 4.48328 0.11712 3.89165 0.476251 3.53314C0.835382 3.17464 1.40761 3.18502 1.75436 3.55632L4.15864 6.13091L8.24603 0.285416C8.59278 -0.0858922 9.16501 -0.0962717 9.52414 0.262233Z' fill='white'/%3E%3C/svg%3E%0A")
+
+    /* стили для чекбокса, находящегося в состоянии disabled */
+    .custom-checkbox>input:disabled+span::before 
+      background-color: #2D3E69
+
+    .custom-checkbox>input:checked+span
+      color: #4F4F4F
+
+
+    /* ---- RADIO ---- */
+
+    /* для элемента input c type="radio" */
+    .radio
+      margin-bottom: 5px
+      &:last-child
+        margin-bottom: 0px
+    .custom-radio
+      margin-bottom: 0px
+
+    .custom-radio>input 
+      position: absolute
+      z-index: -1
+      opacity: 0
+
+    
+    /* для элемента label связанного с .custom-radio */
+    .custom-radio>span 
+      display: inline-flex
+      align-items: center
+      user-select: none
+      cursor: pointer
+      color: #808080
+    
+
+    /* создание в label псевдоэлемента  before со следующими стилями */
+    .custom-radio>span::before 
+      content: ''
+      display: inline-block
+      width: 18px
+      height: 18px
+      flex-shrink: 0
+      flex-grow: 0
+      border: 1px solid #BDBDBD
+      border-radius: 50%
+      margin-right: 0.5em
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 50% 50%
+    
+
+    /* стили при наведении курсора на радио */
+    .custom-radio>input:not(:disabled):not(:checked)+span:hover::before 
+      border-color: #2D3E69
+    
+
+    /* стили для активной радиокнопки (при нажатии на неё) */
+    .custom-radio>input:not(:disabled):active+span::before 
+      background-color: #ffffff
+      border-color: #2D3E69
+  
+    /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+    .custom-radio>input:focus:not(:checked)+span::before 
+      border-color: #2D3E69
+    
+
+    /* стили для радиокнопки, находящейся в состоянии checked */
+    .custom-radio>input:checked+span::before 
+      border-color: #2D3E69
+      background-color: #ffffff
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+
+    /* стили для радиокнопки, находящейся в состоянии disabled */
+    .custom-radio>input:disabled+span::before 
+      background-color: #e9ecef
+      
+    .custom-radio>input:checked+span
+      color: #4F4F4F
+  
+
+.filters-btn-mobile
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  text-align: left
+  color: #2D3E69
+  display: none
+  margin-left: 10px
+  padding: .25rem .5rem
+  &::before
+    content: ''
+    width: 24px
+    height: 24px
+    display: inline-block
+    vertical-align: -12px
+    margin-right: 5px
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='15' viewBox='0 0 18 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13 8C14.306 8 15.417 8.835 15.83 10H17C17.2652 10 17.5196 10.1054 17.7071 10.2929C17.8946 10.4804 18 10.7348 18 11C18 11.2652 17.8946 11.5196 17.7071 11.7071C17.5196 11.8946 17.2652 12 17 12H15.83C15.6468 12.5189 15.3245 12.9774 14.8984 13.3254C14.4722 13.6734 13.9585 13.8976 13.4135 13.9734C12.8686 14.0492 12.3132 13.9737 11.8082 13.7551C11.3033 13.5366 10.8681 13.1835 10.5503 12.7343C10.2325 12.2851 10.0443 11.7572 10.0063 11.2083C9.96832 10.6593 10.082 10.1105 10.3348 9.62186C10.5877 9.13317 10.9701 8.72341 11.4401 8.43737C11.9101 8.15133 12.4498 8.00003 13 8V8ZM7 10C7.26522 10 7.51957 10.1054 7.70711 10.2929C7.89464 10.4804 8 10.7348 8 11C8 11.2652 7.89464 11.5196 7.70711 11.7071C7.51957 11.8946 7.26522 12 7 12H1C0.734784 12 0.48043 11.8946 0.292893 11.7071C0.105357 11.5196 0 11.2652 0 11C0 10.7348 0.105357 10.4804 0.292893 10.2929C0.48043 10.1054 0.734784 10 1 10H7ZM13 10C12.7348 10 12.4804 10.1054 12.2929 10.2929C12.1054 10.4804 12 10.7348 12 11C12 11.2652 12.1054 11.5196 12.2929 11.7071C12.4804 11.8946 12.7348 12 13 12C13.2652 12 13.5196 11.8946 13.7071 11.7071C13.8946 11.5196 14 11.2652 14 11C14 10.7348 13.8946 10.4804 13.7071 10.2929C13.5196 10.1054 13.2652 10 13 10ZM5 1.24966e-07C5.54993 0.000288475 6.0892 0.15173 6.55888 0.437777C7.02856 0.723823 7.41058 1.13347 7.66319 1.62195C7.9158 2.11042 8.02928 2.65894 7.99124 3.20755C7.95319 3.75616 7.76508 4.28376 7.44746 4.73269C7.12984 5.18163 6.69494 5.53462 6.19027 5.75309C5.6856 5.97157 5.13059 6.04712 4.58588 5.9715C4.04118 5.89587 3.52774 5.67198 3.10167 5.32429C2.67561 4.9766 2.35331 4.51848 2.17 4H1C0.734784 4 0.48043 3.89464 0.292893 3.70711C0.105357 3.51957 0 3.26522 0 3C0 2.73478 0.105357 2.48043 0.292893 2.29289C0.48043 2.10536 0.734784 2 1 2H2.17C2.37701 1.41493 2.76032 0.908421 3.26715 0.55024C3.77397 0.192059 4.37938 -0.000178928 5 1.24966e-07ZM17 2C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3C18 3.26522 17.8946 3.51957 17.7071 3.70711C17.5196 3.89464 17.2652 4 17 4H11C10.7348 4 10.4804 3.89464 10.2929 3.70711C10.1054 3.51957 10 3.26522 10 3C10 2.73478 10.1054 2.48043 10.2929 2.29289C10.4804 2.10536 10.7348 2 11 2H17ZM5 2C4.73478 2 4.48043 2.10536 4.29289 2.29289C4.10536 2.48043 4 2.73478 4 3C4 3.26522 4.10536 3.51957 4.29289 3.70711C4.48043 3.89464 4.73478 4 5 4C5.26522 4 5.51957 3.89464 5.70711 3.70711C5.89464 3.51957 6 3.26522 6 3C6 2.73478 5.89464 2.48043 5.70711 2.29289C5.51957 2.10536 5.26522 2 5 2V2Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+
+
+@media (min-width: 320px) and (max-width: 767px)
+  .filters-btn-mobile
+    display: block
+
+  .filter-wrapper
+    display: none

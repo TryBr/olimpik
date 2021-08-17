@@ -908,7 +908,10 @@
 										<div class="slider-item">
 											<div class="item-photo">
 												<a href="" class="item-photo__link">
-													<div class="item-photo__label item-photo__label_sale">Скидка 10%</div>
+													<div class="item-photo__label item-photo__label_new">
+														<span class="label__title">Популярный товар</span>
+														<span class="label__title_mobile">Популярный</span>
+													</div>
 													<img src="img/product.jpg" alt="" class="item-photo__img">
 													<div class="item-photo__type">
 														Tarkett
@@ -917,19 +920,22 @@
 											</div>
 											<div class="item__title">
 												<a href="" class="item__title__link">
-													Ламинат Artisan 933 Дуб Тейт Модерн
+													<span class="item__title__link__text">
+														Ламинат Artisan 931 112 3123 121
+													</span>
 												</a>
 											</div>
 											<p class="item__text">
-												33 класс, 9 мм, без фаски
+												33 класс, 9 мм, без фаски 33 класс, 9 мм, без фаски
+												33 класс, 9 мм, без фаски 33 класс, 9 мм, без фаски
 											</p>
 											<div class="item-params-wrapper">
 												<div class="item-params">
 													<div class="item-params-param active" data-price="1">
 														За м²
 													</div>
-													<div class="item-params-param" data-price="2">
-														За упаковку
+													<div class="item-params-param" data-price="1">
+														За м²
 													</div>
 												</div>
 												<div class="item-add-btns">
@@ -956,16 +962,16 @@
 											<div class="item-order">
 												<div class="item-order-value">
 													<div class="item-order-value__decrease"></div>
-													<div class="item-order-value__number">1</div>
+													<input class="item-order-value__number" type="text" name="am" value="1" size="2">
 													<div class="item-order-value__increase"></div>
 												</div>
-												<div class="item-order-btn">
+												<button type="submit" class="item-order-btn">
 													<div class="item-order-btn__icon"></div>
 													<div class="item-order-btn__separator"></div>
 													<div class="item-order-btn__title">
 														В корзину
 													</div>
-												</div>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -981,7 +987,7 @@
 											</div>
 											<div class="item__title">
 												<a href="" class="item__title__link">
-													Ламинат Artisan 933 Дуб Тейт Модерн
+													Ламинат Artisan 931 Дуб Тейт Модерн
 												</a>
 											</div>
 											<p class="item__text">
@@ -1022,16 +1028,16 @@
 											<div class="item-order">
 												<div class="item-order-value">
 													<div class="item-order-value__decrease"></div>
-													<div class="item-order-value__number">1</div>
+													<input class="item-order-value__number" type="text" name="am" value="1" size="2">
 													<div class="item-order-value__increase"></div>
 												</div>
-												<div class="item-order-btn">
+												<button type="submit" class="item-order-btn">
 													<div class="item-order-btn__icon"></div>
 													<div class="item-order-btn__separator"></div>
 													<div class="item-order-btn__title">
 														В корзину
 													</div>
-												</div>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1046,6 +1052,7 @@
 											</div>
 											<div class="item__title">
 												<a href="" class="item__title__link">
+													Ламинат Artisan 933 Дуб Тейт Модерн
 													Ламинат Artisan 933 Дуб Тейт Модерн
 												</a>
 											</div>
@@ -1184,10 +1191,9 @@
 										</div>
 									</div>
 								</div>
-							
-								<div class="swiper-button-prev swiper-button-prev-ps1"></div>
-								<div class="swiper-button-next swiper-button-next-ps1"></div>
-							</div>						
+							</div>		
+							<div class="swiper-button-prev swiper-button-prev-ps1"></div>
+							<div class="swiper-button-next swiper-button-next-ps1"></div>				
 						</div>
 					</div>
 				</div>
@@ -1649,10 +1655,9 @@
 										</div>
 									</div>
 								</div>
-							
-								<div class="swiper-button-prev swiper-button-prev-ps2"></div>
-								<div class="swiper-button-next swiper-button-next-ps2"></div>
-							</div>						
+							</div>		
+							<div class="swiper-button-prev swiper-button-prev-ps2"></div>
+							<div class="swiper-button-next swiper-button-next-ps2"></div>				
 						</div>
 					</div>
 				</div>
@@ -1765,7 +1770,7 @@
 								
 								</div>
 								<p class="counter__text">
-									м2 напольных покрытий <br>
+									напольных покрытий <br>
 									с 1994 года
 								</p>
 							</div>
@@ -2388,7 +2393,7 @@
 										Почта:
 									</li>
 									<li class="footer-menu-item">
-										<a href="mailto:zakaz@olimpic.ru" class="footer-menu__link">
+										<a href="mailto:zakaz@olimpic.ru" class="footer-menu__link footer-menu_email">
 											zakaz@olimpic.ru
 										</a>
 									</li>
@@ -2446,6 +2451,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<i class="fa fa-chevron-circle-up icon-4x" id="jumptotop"></i>
 
 	<script src="js/scripts.min.js?v=3"></script>
 	<script>

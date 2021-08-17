@@ -1,0 +1,32 @@
+.breadcrumb
+    background: none
+    padding: 0px
+    margin-left: 15px
+    margin-top: 20px
+    margin-bottom: 20px
+    li
+        &:first-child
+            margin-left: 0px
+            &::before
+                display: none
+        &:before
+            content: ''
+            background: #9B9B9B
+            display: inline-block
+            width: 4px
+            height: 4px
+            border-radius: 50%
+            margin: 0 6px
+            vertical-align: 2px
+        a
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            line-height: 24px
+            color: #9B9B9B
+        span
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            line-height: 24px
+            color: #9B9B9B

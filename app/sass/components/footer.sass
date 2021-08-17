@@ -106,6 +106,11 @@
                                 transform: scaleX(1)
                                 transform-origin: bottom left
 
+                    .footer-menu_email
+                        font-weight: 700
+                        font-size: 16px
+                        color: #4f4f4f
+
     .footer-content-right
         display: flex
         justify-content: flex-start
@@ -120,7 +125,7 @@
             display: block
             text-decoration: none
             position: relative
-            &::before
+            &::after
                 content: ''
                 position: absolute
                 width: 100%
@@ -133,9 +138,19 @@
                 transform-origin: bottom right
                 transition: transform 0.25s ease-out
             &:hover
-                &::before
+                &::after
                     transform: scaleX(1)
                     transform-origin: bottom left
+            &::before
+                content: ''
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7778 15.6364L13.0514 15.6364C13.536 15.6364 13.9508 15.9838 14.0359 16.4609L14.4922 19.0212C14.5832 19.5315 14.1908 20 13.6724 20V20C12.836 20 12.0538 19.581 11.6824 18.8316C10.992 17.4386 10 14.9276 10 12C10 9.0724 10.992 6.56143 11.6824 5.16842C12.0538 4.41899 12.836 4 13.6724 4V4C14.1908 4 14.5832 4.46851 14.4922 4.97883L14.0359 7.53911C13.9508 8.01619 13.536 8.36364 13.0514 8.36364L10.7778 8.36364' stroke='%232D3E69' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+                width: 24px
+                height: 24px
+                display: inline-block
+                vertical-align: -5px
+                -webkit-animation: shake 1s 5s linear infinite
+                -moz-animation: shake 1s 5s linear infinite
+                animation: shake 1s 5s linear infinite
         .footer-request__btn
             width: 166px
             height: 40px
@@ -149,6 +164,15 @@
             display: block
             text-align: center
             text-decoration: none
+
+    @keyframes shake
+        0%,
+        100%
+            transform: rotate(0deg)
+        20%, 60%
+            transform: rotate(12deg)
+        40%, 80%
+            transform: rotate(-12deg)
         
     .footer-social
         display: flex
@@ -193,8 +217,17 @@
                     display: block
                     background-image: url("data:image/svg+xml,%3Csvg width='22' height='23' viewBox='0 0 22 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.510907 3.12192C0 4.12463 0 5.43725 0 8.0625V14.9375C0 17.5627 0 18.8754 0.510907 19.8781C0.960313 20.7601 1.67741 21.4772 2.55942 21.9266C3.56213 22.4375 4.87475 22.4375 7.5 22.4375H14.375C17.0002 22.4375 18.3129 22.4375 19.3156 21.9266C20.1976 21.4772 20.9147 20.7601 21.3641 19.8781C21.875 18.8754 21.875 17.5627 21.875 14.9375V8.0625C21.875 5.43725 21.875 4.12463 21.3641 3.12192C20.9147 2.23991 20.1976 1.52281 19.3156 1.07341C18.3129 0.5625 17.0002 0.5625 14.375 0.5625H7.5C4.87475 0.5625 3.56213 0.5625 2.55942 1.07341C1.67741 1.52281 0.960313 2.23991 0.510907 3.12192ZM16.2323 12.6298C16.1403 12.864 16.178 13.0951 16.3463 13.3235C16.5609 13.5644 16.7984 13.8094 17.0385 14.0571C17.7489 14.79 18.4817 15.5459 18.7085 16.2864C18.7885 16.7484 18.4078 16.9203 18.0214 16.9203L15.94 16.9545C15.8097 16.983 15.658 16.9687 15.4848 16.9117C14.8849 16.7143 14.4931 16.2411 14.0979 15.764C13.8444 15.4577 13.5894 15.1499 13.2773 14.9122C13.1217 14.7937 12.934 14.7129 12.7529 14.8093C12.344 15.0242 12.3336 15.4376 12.3231 15.8563C12.3151 16.1728 12.3071 16.4923 12.1269 16.7315C11.8889 16.9956 11.4274 16.9621 11.0508 16.9348C10.9452 16.9271 10.8463 16.9199 10.7609 16.9199C6.86639 17.0597 4.32719 11.4768 3.16686 8.59654C3.02807 8.20737 3.24692 8.0142 3.63851 8.0142L5.8663 7.99716C6.10442 8.03874 6.3304 8.17959 6.41917 8.42528C6.75276 9.24125 7.96704 12.1847 8.72007 12.1847C9.47309 12.1847 9.28467 9.18544 9.02899 8.62239C8.89347 8.42831 8.6632 8.30555 8.33792 8.25423C8.26747 8.24295 8.28108 8.17439 8.37867 8.04875C8.72007 7.60925 10.8124 7.47929 11.7285 7.69763C11.9097 7.74551 12.0867 7.83054 12.1676 8.01879C12.3508 8.44828 12.3088 9.17138 12.2662 9.90347C12.2134 10.8107 12.1598 11.7317 12.5332 12.1249C12.6774 12.1626 12.7563 12.167 12.8829 12.065C13.8449 11.0949 14.5013 9.58552 15.0376 8.34868C15.1066 8.16685 15.2168 8.07749 15.3871 8.03603C15.6833 8.03603 16.004 8.03736 16.3345 8.03873C17.0274 8.0416 17.764 8.04464 18.4118 8.03603C19.4138 8.03603 17.9638 10.0914 16.9865 11.4768C16.6057 12.0165 16.2967 12.4546 16.2323 12.6298Z' fill='%234D76A1'/%3E%3C/svg%3E%0A")
 
+@media (min-width: 1025px) and (max-width: 1300px)
+    .footer
+        .footer-content-center
+            .footer-menu-wrapper
+                margin-right: 25px
+        .footer-content-right
+            .footer__phone
+                font-size: 16px
 
-@media (min-width: 768px) and (max-width: 1300px)
+
+@media (min-width: 768px) and (max-width: 1024px)
     .footer
         padding-bottom: 90px
         .footer-content
@@ -242,7 +275,7 @@
             align-items: center
             align-content: center
             .footer__phone
-                font-size: 36px
+                font-size: 28px
         .footer-social
             display: none
             &.footer-social-mobile

@@ -1,12 +1,12 @@
 .counter
-    margin-top: 160px
-    margin-bottom: 100px
+    margin-top: 90px
+    margin-bottom: 90px
     height: 256px
     background: url("../img/counter-bg.jpg") no-repeat
     background-position: center center
     background-size: cover
     .counter-wrapper
-        max-width: 1070px
+        max-width: 1140px
         margin: 0 auto
         position: relative
         .counter-man
@@ -24,7 +24,7 @@
             color: #4F4F4F
             margin-bottom: 15px
         .counter__text
-            margin-top: 15px
+            margin-top: 0px
             font-style: normal
             font-weight: 500
             font-size: 36px
@@ -43,6 +43,14 @@
         font-size: 48px
         .layout
             font-size: 48px !important
+        &::after
+            content: 'м2'
+            font-style: normal
+            font-weight: 500
+            font-size: 36px
+            color: #4F4F4F
+            vertical-align: -15px
+            
 
 
     .tick-flip, .tick-text-inline 
@@ -121,7 +129,13 @@
         display: none !important
         background-image: none !important
 
-@media (min-width: 768px) and (max-width: 1300px)
+@media (min-width: 1025px) and (max-width: 1050px)
+    .counter
+        .counter-wrapper
+            .counter-man
+                left: -195px
+
+@media (min-width: 768px) and (max-width: 1024px)
     .counter
         .tick-wrapper
             position: relative
@@ -159,6 +173,8 @@
 
 @media (min-width: 375px) and (max-width: 767px)
     .counter
+        margin-top: 30px
+        margin-bottom: 30px
         .tick-wrapper
             position: relative
             left: 0px
@@ -176,25 +192,35 @@
                 font-size: 18px
                 line-height: 21px
                 text-align: center
+                margin-top: 15px
 
         .tick 
             white-space: nowrap
-            font-size: 29px
+            font-size: 26px
             text-align: center
             .layout
-                font-size: 29px !important
+                font-size: 26px !important
+            &::after
+                content: 'м2'
+                font-style: normal
+                font-weight: 500
+                font-size: 18px
+                color: #4F4F4F
+                vertical-align: -10px
 
 
         .tick-flip, .tick-text-inline 
-            font-size: 29px
+            font-size: 26px
 
 
         .tick-label
             margin-top: 1em
-            font-size: 29px
+            font-size: 26px
 
 @media (min-width: 300px) and (max-width: 374px)
     .counter
+        margin-top: 30px
+        margin-bottom: 30px
         .tick-wrapper
             position: relative
             left: 0px
@@ -212,19 +238,27 @@
                 font-size: 18px
                 line-height: 21px
                 text-align: center
+                margin-top: 15px
 
         .tick 
             white-space: nowrap
-            font-size: 24px
+            font-size: 20px
             text-align: center
             .layout
-                font-size: 24px !important
+                font-size: 20px !important
+            &::after
+                content: 'м2'
+                font-style: normal
+                font-weight: 500
+                font-size: 20px
+                color: #4F4F4F
+                vertical-align: -5px
 
 
         .tick-flip, .tick-text-inline 
-            font-size: 24px
+            font-size: 20px
 
 
         .tick-label
             margin-top: 1em
-            font-size: 24px
+            font-size: 20px

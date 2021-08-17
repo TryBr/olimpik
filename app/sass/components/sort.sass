@@ -1,0 +1,80 @@
+.list-filter
+    margin-bottom: 24px
+    .btn-group
+        margin-bottom: 8px
+        width: 100%
+        display: block
+        &:last-child
+            margin-bottom: 0px
+        
+        .dropdown-menu
+            &.show
+                width: 100%
+                position: relative !important
+                transform: none !important
+                background: none !important
+                padding-top: 10px
+                li
+                    margin-bottom: 5px
+                    a
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 16px
+                        color: #2D3E69
+
+        &.show
+            .dropdown-toggle
+                &::after
+                    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 5.5L5 0.5L10 5.5H0Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+                    width: 10px
+                    height: 6px
+                    background-repeat: no-repeat
+                    background-position: center center
+                    border: none
+                    margin-left: 10px
+                    vertical-align: 0px
+                    position: absolute
+                    right: 0px
+                    top: 10px
+    .btn
+        font-style: normal
+        font-weight: normal
+        color: #2D3E69
+        padding: 0px
+        text-align: left
+        position: relative
+        font-size: 16px
+        color: #2D3E69
+        width: 100%
+        outline: none
+        box-shadow: none !important
+    .dropdown-toggle
+        &::after
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 0.5L5 5.5L0 0.5L10 0.5Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+            width: 10px
+            height: 6px
+            background-repeat: no-repeat
+            background-position: center center
+            border: none
+            margin-left: 10px
+            vertical-align: 0px
+            position: absolute
+            right: 0px
+            top: 10px
+    .dropdown-menu
+        background: #f5f5f7
+        border: none
+        padding-top: 20px
+        li
+            a
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                color: #4f4f4f
+                padding: 5px 15px
+                line-height: normal
+                margin-bottom: 15px
+                position: relative
+                overflow: hidden
+                &:last-child
+                    margin-bottom: 0px

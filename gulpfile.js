@@ -64,6 +64,8 @@ gulp.task('scripts', function() {
 		'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
 		'node_modules/swiper/dist/js/swiper.min.js',
 		'node_modules/@pqina/flip/dist/flip.min.js',
+		'node_modules/nouislider/distribute/nouislider.min.js',
+		'node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

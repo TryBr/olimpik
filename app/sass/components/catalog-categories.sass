@@ -1,0 +1,675 @@
+.catalog-categories
+    margin-bottom: 60px
+    padding-bottom: 10px
+    padding-top: 25px
+    border-bottom: 1px solid #E0E0E0
+    border-top: 1px solid #E0E0E0
+    .swiper-container
+        width: 100%
+        height: 100%
+        overflow: visible
+    .swiper-slide
+        // width: 216px !important
+        background: #fff
+        display: -webkit-box
+        display: -ms-flexbox
+        display: -webkit-flex
+        display: flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        -webkit-justify-content: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        -webkit-align-items: center
+        align-items: center
+
+    .swiper-button-next
+        background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cellipse cx='23.5' cy='19.0425' rx='19' ry='19.0425' fill='white'/%3E%3C/g%3E%3Cpath d='M14.5 18.0425C13.9477 18.0425 13.5 18.4902 13.5 19.0425C13.5 19.5948 13.9477 20.0425 14.5 20.0425V18.0425ZM33.2071 19.7496C33.5976 19.3591 33.5976 18.7259 33.2071 18.3354L26.8431 11.9714C26.4526 11.5809 25.8195 11.5809 25.4289 11.9714C25.0384 12.3619 25.0384 12.9951 25.4289 13.3856L31.0858 19.0425L25.4289 24.6993C25.0384 25.0899 25.0384 25.723 25.4289 26.1135C25.8195 26.5041 26.4526 26.5041 26.8431 26.1135L33.2071 19.7496ZM14.5 20.0425H32.5V18.0425H14.5V20.0425Z' fill='%239E9E9E'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.5' y='0' width='46' height='46.085' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.716667 0 0 0 0 0.69875 0 0 0 0 0.69875 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
+        width: 47px
+        height: 47px
+        background-position: center center
+        background-size: 100%
+        right: -5px
+        top: 50px
+    .swiper-button-prev
+        background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' viewBox='0 0 47 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cellipse rx='19' ry='19.0425' transform='matrix(-1 0 0 1 23.5 19.0425)' fill='white'/%3E%3C/g%3E%3Cpath d='M32.5 18.0425C33.0523 18.0425 33.5 18.4902 33.5 19.0425C33.5 19.5948 33.0523 20.0425 32.5 20.0425V18.0425ZM13.7929 19.7496C13.4024 19.3591 13.4024 18.7259 13.7929 18.3354L20.1569 11.9714C20.5474 11.5809 21.1805 11.5809 21.5711 11.9714C21.9616 12.3619 21.9616 12.9951 21.5711 13.3856L15.9142 19.0425L21.5711 24.6993C21.9616 25.0899 21.9616 25.723 21.5711 26.1135C21.1805 26.5041 20.5474 26.5041 20.1569 26.1135L13.7929 19.7496ZM32.5 20.0425H14.5V18.0425H32.5V20.0425Z' fill='%239E9E9E'/%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.5' y='0' width='46' height='46.085' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.716667 0 0 0 0 0.69875 0 0 0 0 0.69875 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A")
+        width: 47px
+        height: 47px
+        background-position: center center
+        background-size: 100%
+        left: -5px
+        top: 50px
+    .slider-top-panel
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 30px
+    .slider__title
+        font-style: normal
+        font-weight: 500
+        font-size: 36px
+        color: #4F4F4F
+        align-self: center
+    .slider__more
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        text-align: right
+        color: #2D3E69
+        align-self: center
+        text-decoration: none
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            transform: scaleX(0)
+            border-radius: 5px
+            height: 1px
+            bottom: 0
+            left: 0
+            background: #2D3E69
+            transform-origin: bottom right
+            transition: transform 0.25s ease-out
+        &:hover
+            &::before
+                transform: scaleX(1)
+                transform-origin: bottom left
+
+    .slider__more__mobile
+        display: none
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        text-align: center
+        color: #2D3E69
+        align-self: center
+        text-decoration: none
+        position: relative
+        margin-top: 40px
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            transform: scaleX(0)
+            border-radius: 5px
+            height: 1px
+            bottom: 0
+            left: 0
+            background: #2D3E69
+            transform-origin: bottom right
+            transition: transform 0.25s ease-out
+        &:hover
+            &::before
+                transform: scaleX(1)
+                transform-origin: bottom left
+
+
+    .slider-items
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        padding: 0px 20px
+        margin: 0px -20px
+        overflow: hidden
+        .slider-item
+            width: 216px
+            .item-photo
+                position: relative
+                width: 100%
+                height: 96px
+                border-radius: 8px
+                overflow: hidden
+                margin-bottom: 6px
+                .item-photo__img
+                    object-position: center center
+                    object-fit: cover
+                    height: 96px
+                    width: 100%
+            .item__title
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 24px
+                color: #2D3E69
+                margin-bottom: 6px
+                padding-right: 14px
+                .item__title__link
+                    color: #2D3E69
+                    text-decoration: none
+                    position: relative
+                    background-image: linear-gradient(#2D3E69, #2D3E69)
+                    background-position: 0% 100%
+                    background-repeat: no-repeat
+                    background-size: 0% 1px
+                    transition: background-size 0.25s
+                    // &::before
+                    //     content: ''
+                    //     position: absolute
+                    //     width: 100%
+                    //     transform: scaleX(0)
+                    //     border-radius: 5px
+                    //     height: 1px
+                    //     bottom: 0
+                    //     left: 0
+                    //     background: #2D3E69
+                    //     transform-origin: bottom right
+                    //     transition: transform 0.25s ease-out
+                    &:hover
+                        background-size: 100% 1px
+                        // &::before
+                        //     transform: scaleX(1)
+                        //     transform-origin: bottom left
+            .item__text
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 24px
+                color: #4F4F4F
+
+
+            .item-params-wrapper
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 13px
+                .item-params
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-start
+                    .item-params-param
+                        padding: 4px 10px
+                        border: 1px solid #EAEAEA
+                        background: #ffffff
+                        border-radius: 4px 0px 0px 4px
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        color: #000000
+                        margin-bottom: 0px
+                        cursor: pointer
+                        &:hover
+                            background: linear-gradient(180deg, #F7F3F3 0%, #E2E2E2 100%) !important
+                        &:last-child
+                            border-radius: 0px 4px 4px 0px
+                            border: 1px solid #EAEAEA
+                            background: #ffffff
+                        &:only-child
+                            border-radius: 4px 4px 4px 4px
+                            border: 1px solid #EAEAEA
+                            background: #ffffff
+                        &.active
+                            padding: 4px 10px
+                            background: linear-gradient(180deg, #F7F3F3 0%, #E2E2E2 100%)
+                            border-radius: 4px 0px 0px 4px
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            color: #000000
+                            margin-bottom: 0px
+                            cursor: pointer
+                            &:last-child
+                                border-radius: 0px 4px 4px 0px
+
+
+                .item-add-btns
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    align-items: center
+                    .item-add-btns__comp
+                        cursor: pointer
+                        margin-right: 8px
+                        width: 14px
+                        height: 16px
+                        background-repeat: no-repeat
+                        background-position: center center
+                        background: url("data:image/svg+xml,%3Csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.32' d='M1.26471 8C1.06189 8 0.867387 8.07902 0.723977 8.21967C0.580567 8.36032 0.5 8.55109 0.5 8.75V14.75C0.5 14.9489 0.580567 15.1397 0.723977 15.2803C0.867387 15.421 1.06189 15.5 1.26471 15.5C1.46752 15.5 1.66202 15.421 1.80543 15.2803C1.94884 15.1397 2.02941 14.9489 2.02941 14.75V8.75C2.02941 8.55109 1.94884 8.36032 1.80543 8.21967C1.66202 8.07902 1.46752 8 1.26471 8ZM5.08824 0.5C4.88542 0.5 4.69092 0.579018 4.54751 0.71967C4.4041 0.860322 4.32353 1.05109 4.32353 1.25V14.75C4.32353 14.9489 4.4041 15.1397 4.54751 15.2803C4.69092 15.421 4.88542 15.5 5.08824 15.5C5.29105 15.5 5.48555 15.421 5.62896 15.2803C5.77237 15.1397 5.85294 14.9489 5.85294 14.75V1.25C5.85294 1.05109 5.77237 0.860322 5.62896 0.71967C5.48555 0.579018 5.29105 0.5 5.08824 0.5ZM12.7353 11C12.5325 11 12.338 11.079 12.1946 11.2197C12.0512 11.3603 11.9706 11.5511 11.9706 11.75V14.75C11.9706 14.9489 12.0512 15.1397 12.1946 15.2803C12.338 15.421 12.5325 15.5 12.7353 15.5C12.9381 15.5 13.1326 15.421 13.276 15.2803C13.4194 15.1397 13.5 14.9489 13.5 14.75V11.75C13.5 11.5511 13.4194 11.3603 13.276 11.2197C13.1326 11.079 12.9381 11 12.7353 11ZM8.91177 5C8.70895 5 8.51445 5.07902 8.37104 5.21967C8.22763 5.36032 8.14706 5.55109 8.14706 5.75V14.75C8.14706 14.9489 8.22763 15.1397 8.37104 15.2803C8.51445 15.421 8.70895 15.5 8.91177 15.5C9.11458 15.5 9.30908 15.421 9.45249 15.2803C9.5959 15.1397 9.67647 14.9489 9.67647 14.75V5.75C9.67647 5.55109 9.5959 5.36032 9.45249 5.21967C9.30908 5.07902 9.11458 5 8.91177 5Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+                        &:hover
+                            width: 14px
+                            height: 16px
+                            background-repeat: no-repeat
+                            background-position: center center
+                            background: url("data:image/svg+xml,%3Csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.26471 8C1.06189 8 0.867387 8.07902 0.723977 8.21967C0.580567 8.36032 0.5 8.55109 0.5 8.75V14.75C0.5 14.9489 0.580567 15.1397 0.723977 15.2803C0.867387 15.421 1.06189 15.5 1.26471 15.5C1.46752 15.5 1.66202 15.421 1.80543 15.2803C1.94884 15.1397 2.02941 14.9489 2.02941 14.75V8.75C2.02941 8.55109 1.94884 8.36032 1.80543 8.21967C1.66202 8.07902 1.46752 8 1.26471 8ZM5.08824 0.5C4.88542 0.5 4.69092 0.579018 4.54751 0.71967C4.4041 0.860322 4.32353 1.05109 4.32353 1.25V14.75C4.32353 14.9489 4.4041 15.1397 4.54751 15.2803C4.69092 15.421 4.88542 15.5 5.08824 15.5C5.29105 15.5 5.48555 15.421 5.62896 15.2803C5.77237 15.1397 5.85294 14.9489 5.85294 14.75V1.25C5.85294 1.05109 5.77237 0.860322 5.62896 0.71967C5.48555 0.579018 5.29105 0.5 5.08824 0.5ZM12.7353 11C12.5325 11 12.338 11.079 12.1946 11.2197C12.0512 11.3603 11.9706 11.5511 11.9706 11.75V14.75C11.9706 14.9489 12.0512 15.1397 12.1946 15.2803C12.338 15.421 12.5325 15.5 12.7353 15.5C12.9381 15.5 13.1326 15.421 13.276 15.2803C13.4194 15.1397 13.5 14.9489 13.5 14.75V11.75C13.5 11.5511 13.4194 11.3603 13.276 11.2197C13.1326 11.079 12.9381 11 12.7353 11ZM8.91177 5C8.70895 5 8.51445 5.07902 8.37104 5.21967C8.22763 5.36032 8.14706 5.55109 8.14706 5.75V14.75C8.14706 14.9489 8.22763 15.1397 8.37104 15.2803C8.51445 15.421 8.70895 15.5 8.91177 15.5C9.11458 15.5 9.30908 15.421 9.45249 15.2803C9.5959 15.1397 9.67647 14.9489 9.67647 14.75V5.75C9.67647 5.55109 9.5959 5.36032 9.45249 5.21967C9.30908 5.07902 9.11458 5 8.91177 5Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+                        &.active
+                            width: 14px
+                            height: 16px
+                            background-repeat: no-repeat
+                            background-position: center center
+                            background: url("data:image/svg+xml,%3Csvg width='14' height='16' viewBox='0 0 14 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.26471 8C1.06189 8 0.867387 8.07902 0.723977 8.21967C0.580567 8.36032 0.5 8.55109 0.5 8.75V14.75C0.5 14.9489 0.580567 15.1397 0.723977 15.2803C0.867387 15.421 1.06189 15.5 1.26471 15.5C1.46752 15.5 1.66202 15.421 1.80543 15.2803C1.94884 15.1397 2.02941 14.9489 2.02941 14.75V8.75C2.02941 8.55109 1.94884 8.36032 1.80543 8.21967C1.66202 8.07902 1.46752 8 1.26471 8ZM5.08824 0.5C4.88542 0.5 4.69092 0.579018 4.54751 0.71967C4.4041 0.860322 4.32353 1.05109 4.32353 1.25V14.75C4.32353 14.9489 4.4041 15.1397 4.54751 15.2803C4.69092 15.421 4.88542 15.5 5.08824 15.5C5.29105 15.5 5.48555 15.421 5.62896 15.2803C5.77237 15.1397 5.85294 14.9489 5.85294 14.75V1.25C5.85294 1.05109 5.77237 0.860322 5.62896 0.71967C5.48555 0.579018 5.29105 0.5 5.08824 0.5ZM12.7353 11C12.5325 11 12.338 11.079 12.1946 11.2197C12.0512 11.3603 11.9706 11.5511 11.9706 11.75V14.75C11.9706 14.9489 12.0512 15.1397 12.1946 15.2803C12.338 15.421 12.5325 15.5 12.7353 15.5C12.9381 15.5 13.1326 15.421 13.276 15.2803C13.4194 15.1397 13.5 14.9489 13.5 14.75V11.75C13.5 11.5511 13.4194 11.3603 13.276 11.2197C13.1326 11.079 12.9381 11 12.7353 11ZM8.91177 5C8.70895 5 8.51445 5.07902 8.37104 5.21967C8.22763 5.36032 8.14706 5.55109 8.14706 5.75V14.75C8.14706 14.9489 8.22763 15.1397 8.37104 15.2803C8.51445 15.421 8.70895 15.5 8.91177 15.5C9.11458 15.5 9.30908 15.421 9.45249 15.2803C9.5959 15.1397 9.67647 14.9489 9.67647 14.75V5.75C9.67647 5.55109 9.5959 5.36032 9.45249 5.21967C9.30908 5.07902 9.11458 5 8.91177 5Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+                    .item-add-btns__fav
+                        cursor: pointer
+                        width: 16px
+                        height: 15px
+                        background-repeat: no-repeat
+                        background-position: center center
+                        background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.32' d='M14.1325 1.98311C13.3372 1.14427 12.2831 0.632293 11.1605 0.539655C10.0378 0.447017 8.92071 0.779829 8.01091 1.47797C7.0564 0.73103 5.86835 0.392329 4.686 0.530079C3.50365 0.667829 2.41481 1.2718 1.63877 2.22036C0.862718 3.16892 0.457102 4.39162 0.503597 5.64223C0.550093 6.89284 1.04525 8.07846 1.88935 8.96035L6.54803 13.8697C6.93815 14.2736 7.46356 14.5 8.01091 14.5C8.55826 14.5 9.08366 14.2736 9.47378 13.8697L14.1325 8.96035C15.0084 8.03316 15.5 6.779 15.5 5.47173C15.5 4.16447 15.0084 2.91031 14.1325 1.98311ZM13.0747 7.87114L8.41601 12.7726C8.363 12.8289 8.2999 12.8736 8.23037 12.9041C8.16083 12.9346 8.08624 12.9503 8.01091 12.9503C7.93557 12.9503 7.86098 12.9346 7.79144 12.9041C7.72191 12.8736 7.65882 12.8289 7.6058 12.7726L2.94712 7.84746C2.35879 7.21473 2.02934 6.36478 2.02934 5.47962C2.02934 4.59447 2.35879 3.74451 2.94712 3.11178C3.54664 2.48903 4.35521 2.13984 5.19769 2.13984C6.04017 2.13984 6.84874 2.48903 7.44826 3.11178C7.518 3.18576 7.60097 3.24448 7.69239 3.28455C7.78381 3.32462 7.88186 3.34525 7.9809 3.34525C8.07993 3.34525 8.17799 3.32462 8.2694 3.28455C8.36082 3.24448 8.44379 3.18576 8.51353 3.11178C9.11305 2.48903 9.92162 2.13984 10.7641 2.13984C11.6066 2.13984 12.4152 2.48903 13.0147 3.11178C13.6111 3.73622 13.9514 4.58157 13.9626 5.46675C13.9738 6.35192 13.6551 7.20652 13.0747 7.84746V7.87114Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+                        &:hover
+                            width: 16px
+                            height: 15px
+                            background-repeat: no-repeat
+                            background-position: center center
+                            background: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.1325 1.98311C13.3372 1.14427 12.2831 0.632293 11.1605 0.539655C10.0378 0.447017 8.92071 0.779829 8.01091 1.47797C7.0564 0.73103 5.86835 0.392329 4.686 0.530079C3.50365 0.667829 2.41481 1.2718 1.63877 2.22036C0.862718 3.16892 0.457102 4.39162 0.503597 5.64223C0.550093 6.89284 1.04525 8.07846 1.88935 8.96035L6.54803 13.8697C6.93815 14.2736 7.46356 14.5 8.01091 14.5C8.55826 14.5 9.08366 14.2736 9.47378 13.8697L14.1325 8.96035C15.0084 8.03316 15.5 6.779 15.5 5.47173C15.5 4.16447 15.0084 2.91031 14.1325 1.98311ZM13.0747 7.87114L8.41601 12.7726C8.363 12.8289 8.2999 12.8736 8.23037 12.9041C8.16083 12.9346 8.08624 12.9503 8.01091 12.9503C7.93557 12.9503 7.86098 12.9346 7.79144 12.9041C7.72191 12.8736 7.65882 12.8289 7.6058 12.7726L2.94712 7.84746C2.35879 7.21473 2.02934 6.36478 2.02934 5.47962C2.02934 4.59447 2.35879 3.74451 2.94712 3.11178C3.54664 2.48903 4.35521 2.13984 5.19769 2.13984C6.04017 2.13984 6.84874 2.48903 7.44826 3.11178C7.518 3.18576 7.60097 3.24448 7.69239 3.28455C7.78381 3.32462 7.88186 3.34525 7.9809 3.34525C8.07993 3.34525 8.17799 3.32462 8.2694 3.28455C8.36082 3.24448 8.44379 3.18576 8.51353 3.11178C9.11305 2.48903 9.92162 2.13984 10.7641 2.13984C11.6066 2.13984 12.4152 2.48903 13.0147 3.11178C13.6111 3.73622 13.9514 4.58157 13.9626 5.46675C13.9738 6.35192 13.6551 7.20652 13.0747 7.84746V7.87114Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+                        &.active
+                            width: 16px
+                            height: 15px
+                            background-repeat: no-repeat
+                            background-position: center center
+                            background: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.1325 1.98311C13.3372 1.14427 12.2831 0.632293 11.1605 0.539655C10.0378 0.447017 8.92071 0.779829 8.01091 1.47797C7.0564 0.73103 5.86835 0.392329 4.686 0.530079C3.50365 0.667829 2.41481 1.2718 1.63877 2.22036C0.862718 3.16892 0.457102 4.39162 0.503597 5.64223C0.550093 6.89284 1.04525 8.07846 1.88935 8.96035L6.54803 13.8697C6.93815 14.2736 7.46356 14.5 8.01091 14.5C8.55826 14.5 9.08366 14.2736 9.47378 13.8697L14.1325 8.96035C15.0084 8.03316 15.5 6.779 15.5 5.47173C15.5 4.16447 15.0084 2.91031 14.1325 1.98311ZM13.0747 7.87114L8.41601 12.7726C8.363 12.8289 8.2999 12.8736 8.23037 12.9041C8.16083 12.9346 8.08624 12.9503 8.01091 12.9503C7.93557 12.9503 7.86098 12.9346 7.79144 12.9041C7.72191 12.8736 7.65882 12.8289 7.6058 12.7726L2.94712 7.84746C2.35879 7.21473 2.02934 6.36478 2.02934 5.47962C2.02934 4.59447 2.35879 3.74451 2.94712 3.11178C3.54664 2.48903 4.35521 2.13984 5.19769 2.13984C6.04017 2.13984 6.84874 2.48903 7.44826 3.11178C7.518 3.18576 7.60097 3.24448 7.69239 3.28455C7.78381 3.32462 7.88186 3.34525 7.9809 3.34525C8.07993 3.34525 8.17799 3.32462 8.2694 3.28455C8.36082 3.24448 8.44379 3.18576 8.51353 3.11178C9.11305 2.48903 9.92162 2.13984 10.7641 2.13984C11.6066 2.13984 12.4152 2.48903 13.0147 3.11178C13.6111 3.73622 13.9514 4.58157 13.9626 5.46675C13.9738 6.35192 13.6551 7.20652 13.0747 7.84746V7.87114Z' fill='%232D3E69'/%3E%3C/svg%3E%0A")
+            .item-price
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+                margin-bottom: 13px
+                &.active
+                    display: flex
+                &.hidden
+                    display: none
+                &.item-price-2
+                    display: none
+                    &.active
+                        display: flex
+                    &.hidden
+                        display: none
+                .item-price__value
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 21px
+                    color: #000000
+                    margin-right: 25px
+                    .currency
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 18px
+                        color: #4F4F4F
+
+                .item-price__sale
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 18px
+                    text-decoration-line: line-through
+                    color: #4F4F4F
+                    opacity: 0.42
+                    .currency
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 18px
+                        text-decoration-line: line-through
+                        color: #4F4F4F
+                        opacity: 0.42
+
+            .item-order
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                .item-order-value
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-start
+                    align-items: center
+                    .item-order-value__decrease
+                        width: 16px
+                        height: 16px
+                        left: 0px
+                        top: 6px
+                        border-radius: 4px
+                        background: url("data:image/svg+xml,%3Csvg width='9' height='2' viewBox='0 0 9 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.5 0.666667C8.5 1.03486 8.20152 1.33333 7.83333 1.33333H1.16667C0.798477 1.33333 0.5 1.03486 0.5 0.666667C0.5 0.298477 0.798477 0 1.16667 0H7.83333C8.20152 0 8.5 0.298477 8.5 0.666667Z' fill='%23828282'/%3E%3C/svg%3E%0A") #EAEAEA
+                        background-position: center center
+                        background-repeat: no-repeat
+                        cursor: pointer
+
+                    .item-order-value__number
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 21px
+                        color: #4F4F4F
+                        margin: 0 4px
+                        width: 25px
+                        text-align: center
+                        border: none
+                    .item-order-value__increase
+                        width: 16px
+                        height: 16px
+                        left: 0px
+                        top: 6px
+                        background: url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.5 4C8.5 4.31559 8.24416 4.57143 7.92857 4.57143H1.07143C0.755838 4.57143 0.5 4.31559 0.5 4C0.5 3.68441 0.755837 3.42857 1.07143 3.42857H7.92857C8.24416 3.42857 8.5 3.68441 8.5 4Z' fill='%23828282'/%3E%3Cpath d='M4.5 8C4.18441 8 3.92857 7.74416 3.92857 7.42857L3.92857 0.571429C3.92857 0.255838 4.18441 -1.37949e-08 4.5 0C4.81559 1.37949e-08 5.07143 0.255837 5.07143 0.571429L5.07143 7.42857C5.07143 7.74416 4.81559 8 4.5 8Z' fill='%23828282'/%3E%3C/svg%3E%0A") #EAEAEA
+                        background-position: center center
+                        background-repeat: no-repeat
+                        border-radius: 4px
+                        cursor: pointer
+
+                .item-order-btn
+                    width: 140px
+                    height: 34px
+                    background: #2D3E69
+                    border-radius: 4px
+                    text-align: center
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    cursor: pointer
+                    border: none
+                    padding: 0px
+                    .item-order-btn__icon
+                        content: ''
+                        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.49814 12.5098C9.69777 12.5098 9.88923 12.431 10.0304 12.2908C10.1715 12.1506 10.2508 11.9605 10.2508 11.7622V10.2671C10.2508 10.0689 10.1715 9.87874 10.0304 9.73854C9.88923 9.59835 9.69777 9.51959 9.49814 9.51959C9.29851 9.51959 9.10706 9.59835 8.9659 9.73854C8.82474 9.87874 8.74544 10.0689 8.74544 10.2671V11.7622C8.74544 11.9605 8.82474 12.1506 8.9659 12.2908C9.10706 12.431 9.29851 12.5098 9.49814 12.5098ZM6.48732 12.5098C6.68695 12.5098 6.8784 12.431 7.01956 12.2908C7.16072 12.1506 7.24002 11.9605 7.24002 11.7622V10.2671C7.24002 10.0689 7.16072 9.87874 7.01956 9.73854C6.8784 9.59835 6.68695 9.51959 6.48732 9.51959C6.28769 9.51959 6.09623 9.59835 5.95507 9.73854C5.81391 9.87874 5.73461 10.0689 5.73461 10.2671V11.7622C5.73461 11.9605 5.81391 12.1506 5.95507 12.2908C6.09623 12.431 6.28769 12.5098 6.48732 12.5098ZM13.2617 3.53921H12.2229L10.9208 0.960174C10.881 0.865276 10.8219 0.779547 10.7472 0.708347C10.6726 0.637146 10.5839 0.582003 10.4868 0.546364C10.3898 0.510724 10.2863 0.495355 10.183 0.501216C10.0796 0.507077 9.97863 0.534042 9.88625 0.580427C9.79388 0.626811 9.71214 0.691618 9.64613 0.770797C9.58011 0.849976 9.53125 0.941825 9.5026 1.04061C9.47395 1.13939 9.46611 1.24297 9.47959 1.3449C9.49307 1.44682 9.52757 1.54489 9.58094 1.63297L10.5369 3.53921H5.44858L6.40452 1.63297C6.47758 1.45872 6.48156 1.26347 6.41567 1.08643C6.34978 0.909379 6.21889 0.763642 6.04929 0.678473C5.87968 0.593304 5.68391 0.575009 5.50128 0.627261C5.31865 0.679513 5.16269 0.798443 5.0647 0.960174L3.76252 3.53921H2.72378C2.19176 3.54725 1.67969 3.74161 1.27787 4.08801C0.876056 4.43441 0.610314 4.91061 0.527514 5.43261C0.444714 5.95461 0.550174 6.48888 0.825296 6.94119C1.10042 7.3935 1.52753 7.7348 2.03129 7.90489L2.5883 13.4816C2.64446 14.0367 2.90695 14.5511 3.3245 14.9243C3.74204 15.2975 4.28467 15.5028 4.84642 15.5H11.1541C11.7158 15.5028 12.2585 15.2975 12.676 14.9243C13.0936 14.5511 13.356 14.0367 13.4122 13.4816L13.9692 7.90489C14.4741 7.73429 14.9019 7.39175 15.1768 6.93792C15.4517 6.4841 15.556 5.94828 15.4713 5.42538C15.3866 4.90248 15.1182 4.42624 14.7138 4.08102C14.3093 3.73579 13.7949 3.54386 13.2617 3.53921ZM11.8993 13.3321C11.8806 13.5171 11.7931 13.6886 11.6539 13.813C11.5147 13.9374 11.3338 14.0058 11.1466 14.0049H4.83889C4.65164 14.0058 4.47076 13.9374 4.33158 13.813C4.1924 13.6886 4.1049 13.5171 4.08618 13.3321L3.55176 8.0245H12.4337L11.8993 13.3321ZM13.2617 6.5294H2.72378C2.52415 6.5294 2.3327 6.45064 2.19154 6.31045C2.05038 6.17026 1.97108 5.98012 1.97108 5.78186C1.97108 5.58359 2.05038 5.39345 2.19154 5.25326C2.3327 5.11307 2.52415 5.03431 2.72378 5.03431H13.2617C13.4613 5.03431 13.6528 5.11307 13.7939 5.25326C13.9351 5.39345 14.0144 5.58359 14.0144 5.78186C14.0144 5.98012 13.9351 6.17026 13.7939 6.31045C13.6528 6.45064 13.4613 6.5294 13.2617 6.5294Z' fill='white'/%3E%3C/svg%3E%0A")
+                        background-repeat: no-repeat
+                        background-position: center center
+                        width: 16px
+                        height: 16px
+                    .item-order-btn__separator
+                        width: 1px
+                        height: 14px
+                        margin: 0 10px
+                        background: #FFFFFF
+                        border-radius: 1px
+                    .item-order-btn__title
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        color: #FFFFFF
+                        line-height: 34px
+
+                .item-choose-btn
+                    width: 100%
+                    height: 34px
+                    background: #2D3E69
+                    border-radius: 4px
+                    text-align: center
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    cursor: pointer
+                    .item-order-btn__icon
+                        content: ''
+                        background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.28125 5.6875C4.12694 5.6875 4.8125 5.00194 4.8125 4.15625C4.8125 3.31056 4.12694 2.625 3.28125 2.625C2.43556 2.625 1.75 3.31056 1.75 4.15625C1.75 5.00194 2.43556 5.6875 3.28125 5.6875Z' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3.28125 11.375C4.12694 11.375 4.8125 10.6894 4.8125 9.84375C4.8125 8.99806 4.12694 8.3125 3.28125 8.3125C2.43556 8.3125 1.75 8.99806 1.75 9.84375C1.75 10.6894 2.43556 11.375 3.28125 11.375Z' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.43752 7L4.54492 8.97915' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.6875 3.40784L8.98706 5.93973' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.6876 10.592L4.54492 5.02075' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+                        background-repeat: no-repeat
+                        background-position: center center
+                        width: 14px
+                        height: 14px
+                    .item-order-btn__separator
+                        width: 1px
+                        height: 14px
+                        margin: 0 10px
+                        background: #FFFFFF
+                        border-radius: 1px
+                    .item-order-btn__title
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        color: #FFFFFF
+                        line-height: 34px
+
+
+.categories-list
+    list-style: none
+    padding: 0px
+    margin: 0px
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    flex-wrap: wrap
+    .categories-list-item
+        margin-right: 24px
+        margin-bottom: 24px
+        display: none
+        &.categories-list-item_more
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            color: #2D3E69
+            display: block
+            cursor: pointer
+            position: relative
+            background-image: linear-gradient(#2D3E69, #2D3E69)
+            background-position: 0% 100%
+            background-repeat: no-repeat
+            background-size: 0% 1px
+            transition: background-size 0.25s
+            &:hover
+                background-size: 100% 1px
+        &.categories-list-item_hide
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            color: #2D3E69
+            cursor: pointer
+            position: relative
+            background-image: linear-gradient(#2D3E69, #2D3E69)
+            background-position: 0% 100%
+            background-repeat: no-repeat
+            background-size: 0% 1px
+            transition: background-size 0.25s
+            &:hover
+                background-size: 100% 1px
+        &:last-child
+            margin-right: 0px
+        .categories-list-item__link
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #2D3E69
+            text-decoration: none
+            position: relative
+            background-image: linear-gradient(#2D3E69, #2D3E69)
+            background-position: 0% 100%
+            background-repeat: no-repeat
+            background-size: 0% 1px
+            transition: background-size 0.25s
+            &:hover
+                background-size: 100% 1px
+            .categories-list-item__title
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: #2D3E69
+            .categories-list-item__value
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: #9B9B9B
+
+    .dropdown-menu
+        background: #ffffff
+        border: none
+        padding-top: 20px
+        .dropdown-item
+            position: relative
+            &:hover
+                background: #f5f5f7
+
+    .dropdown-toggle
+        &::after
+            content: ''
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.04541L5 4.54541L9 1.04541' stroke='%234F4F4F' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+            width: 10px
+            height: 6px
+            border: none
+            margin-left: 9px
+            vertical-align: 2px
+        .nav-link__title
+            &::before
+                content: ''
+                background-image: url("data:image/svg+xml,%3Csvg width='12' height='15' viewBox='0 0 12 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.2489 2.64358C9.12301 1.53306 7.59595 0.90918 6.00367 0.90918C4.4114 0.90918 2.88434 1.53306 1.75844 2.64358C0.632528 3.7541 1.18634e-08 5.26028 0 6.83079C-1.18634e-08 8.4013 0.632528 9.90749 1.75844 11.018L5.48717 14.7028C5.55295 14.7682 5.6312 14.8201 5.71742 14.8555C5.80364 14.8909 5.89612 14.9092 5.98952 14.9092C6.08293 14.9092 6.17541 14.8909 6.26163 14.8555C6.34785 14.8201 6.4261 14.7682 6.49188 14.7028L10.2489 10.9831C11.3701 9.87721 12 8.37731 12 6.81335C12 5.24938 11.3701 3.74948 10.2489 2.64358ZM9.23713 9.98516L6.00367 13.1884L2.77022 9.98516C2.13141 9.35451 1.69651 8.55121 1.52049 7.67681C1.34446 6.80241 1.43522 5.89617 1.78129 5.07264C2.12736 4.24911 2.7132 3.54526 3.46476 3.05007C4.21632 2.55488 5.09985 2.29058 6.00367 2.29058C6.9075 2.29058 7.79103 2.55488 8.54259 3.05007C9.29415 3.54526 9.87999 4.24911 10.2261 5.07264C10.5721 5.89617 10.6629 6.80241 10.4869 7.67681C10.3108 8.55121 9.87594 9.35451 9.23713 9.98516ZM3.88105 4.68834C3.30987 5.25345 2.98913 6.01887 2.98913 6.81684C2.98913 7.6148 3.30987 8.38022 3.88105 8.94534C4.30541 9.36461 4.84585 9.65094 5.43456 9.7684C6.02328 9.88587 6.63406 9.82924 7.19027 9.60563C7.74648 9.38201 8.22336 9.00136 8.56106 8.51143C8.89877 8.02151 9.08227 7.44413 9.08855 6.85173C9.09174 6.45618 9.01448 6.06401 8.86136 5.69842C8.70823 5.33283 8.48235 5.00123 8.19705 4.72323C7.91663 4.4403 7.58225 4.21486 7.21316 4.05988C6.84407 3.9049 6.44754 3.82345 6.04641 3.82021C5.64528 3.81696 5.24745 3.892 4.87584 4.04098C4.50422 4.18997 4.16614 4.40998 3.88105 4.68834ZM7.19942 7.95436C6.93129 8.22286 6.57693 8.39116 6.19692 8.43048C5.81691 8.46981 5.43486 8.37772 5.11607 8.16995C4.79728 7.96219 4.56156 7.65165 4.44921 7.29144C4.33686 6.93123 4.35486 6.54372 4.50012 6.19514C4.64539 5.84657 4.9089 5.55859 5.24561 5.38044C5.58231 5.20229 5.97131 5.14503 6.34608 5.21845C6.72085 5.29187 7.05813 5.49141 7.30025 5.78296C7.54237 6.07451 7.67429 6.43997 7.67347 6.81684C7.66317 7.24761 7.47995 7.65674 7.16404 7.95436H7.19942Z' fill='%234F4F4F'/%3E%3C/svg%3E%0A")
+                width: 12px
+                height: 15px
+                border: none
+                display: inline-block
+                margin-right: 10px
+                vertical-align: -2px
+        &.dropdown-city
+            &::after
+                content: ''
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.04541L5 4.54541L9 1.04541' stroke='%234F4F4F' stroke-linecap='round'/%3E%3C/svg%3E%0A")
+                width: 10px
+                height: 6px
+                border: none
+                margin-left: 9px
+                vertical-align: 2px
+            .nav-link__title
+                &::before
+                    content: ''
+                    background-image: url("data:image/svg+xml,%3Csvg width='12' height='15' viewBox='0 0 12 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.2489 2.64358C9.12301 1.53306 7.59595 0.90918 6.00367 0.90918C4.4114 0.90918 2.88434 1.53306 1.75844 2.64358C0.632528 3.7541 1.18634e-08 5.26028 0 6.83079C-1.18634e-08 8.4013 0.632528 9.90749 1.75844 11.018L5.48717 14.7028C5.55295 14.7682 5.6312 14.8201 5.71742 14.8555C5.80364 14.8909 5.89612 14.9092 5.98952 14.9092C6.08293 14.9092 6.17541 14.8909 6.26163 14.8555C6.34785 14.8201 6.4261 14.7682 6.49188 14.7028L10.2489 10.9831C11.3701 9.87721 12 8.37731 12 6.81335C12 5.24938 11.3701 3.74948 10.2489 2.64358ZM9.23713 9.98516L6.00367 13.1884L2.77022 9.98516C2.13141 9.35451 1.69651 8.55121 1.52049 7.67681C1.34446 6.80241 1.43522 5.89617 1.78129 5.07264C2.12736 4.24911 2.7132 3.54526 3.46476 3.05007C4.21632 2.55488 5.09985 2.29058 6.00367 2.29058C6.9075 2.29058 7.79103 2.55488 8.54259 3.05007C9.29415 3.54526 9.87999 4.24911 10.2261 5.07264C10.5721 5.89617 10.6629 6.80241 10.4869 7.67681C10.3108 8.55121 9.87594 9.35451 9.23713 9.98516ZM3.88105 4.68834C3.30987 5.25345 2.98913 6.01887 2.98913 6.81684C2.98913 7.6148 3.30987 8.38022 3.88105 8.94534C4.30541 9.36461 4.84585 9.65094 5.43456 9.7684C6.02328 9.88587 6.63406 9.82924 7.19027 9.60563C7.74648 9.38201 8.22336 9.00136 8.56106 8.51143C8.89877 8.02151 9.08227 7.44413 9.08855 6.85173C9.09174 6.45618 9.01448 6.06401 8.86136 5.69842C8.70823 5.33283 8.48235 5.00123 8.19705 4.72323C7.91663 4.4403 7.58225 4.21486 7.21316 4.05988C6.84407 3.9049 6.44754 3.82345 6.04641 3.82021C5.64528 3.81696 5.24745 3.892 4.87584 4.04098C4.50422 4.18997 4.16614 4.40998 3.88105 4.68834ZM7.19942 7.95436C6.93129 8.22286 6.57693 8.39116 6.19692 8.43048C5.81691 8.46981 5.43486 8.37772 5.11607 8.16995C4.79728 7.96219 4.56156 7.65165 4.44921 7.29144C4.33686 6.93123 4.35486 6.54372 4.50012 6.19514C4.64539 5.84657 4.9089 5.55859 5.24561 5.38044C5.58231 5.20229 5.97131 5.14503 6.34608 5.21845C6.72085 5.29187 7.05813 5.49141 7.30025 5.78296C7.54237 6.07451 7.67429 6.43997 7.67347 6.81684C7.66317 7.24761 7.47995 7.65674 7.16404 7.95436H7.19942Z' fill='%234F4F4F'/%3E%3C/svg%3E%0A")
+                    width: 12px
+                    height: 15px
+                    border: none
+                    display: inline-block
+                    margin-right: 10px
+                    vertical-align: -2px
+
+    .dropdown-item
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        color: #4f4f4f
+        padding: 5px 15px
+        line-height: normal
+        margin-bottom: 15px
+        position: relative
+        overflow: hidden
+        &:last-child
+            margin-bottom: 0px
+
+@media (min-width: 768px) and (max-width: 1300px)
+    .catalog-categories
+        .slider-top-panel
+            justify-content: center
+        .swiper-container
+            width: 100%
+            height: 100%
+            overflow: hidden
+        .slider-items
+            padding: 0px
+            margin: 0px
+        .slider__title
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            text-align: center
+            color: #4F4F4F
+        .slider__more
+            display: none
+        .slider__more__mobile
+            display: block
+
+        .swiper-button-prev
+            left: 10px
+            top: 95px
+        .swiper-button-next
+            right: 10px
+            top: 95px
+
+@media (min-width: 320px) and (max-width: 767px)
+    .catalog-categories
+        .slider-top-panel
+            justify-content: center
+        .swiper-container
+            width: 100%
+            height: 100%
+            overflow: hidden
+        .slider-items
+            padding: 0px
+            margin: 0px
+            .slider-item
+                .item__title
+                    min-height: auto
+                    height: 50px
+                    width: 100px
+                    overflow: hidden
+                    position: relative
+                    &::after
+                        content: "..."
+                        color: #333
+                        font-size: 14px
+                        position: absolute
+                        left: 97px
+                        bottom: 0px
+                .item-price
+                    flex-direction: column
+                    align-items: flex-start
+                    .item-price__sale
+                        display: none
+                .item__text
+                    display: none
+                .item-params-wrapper
+                    display: none
+                .item-order
+                    .item-order-btn
+                        width: 34px
+                        .item-order-btn__separator
+                            display: none
+                        .item-order-btn__title
+                            display: none
+                    .item-choose-btn
+                        width: 34px
+                        .item-order-btn__separator
+                            display: none
+                        .item-order-btn__title
+                            display: none
+                .item-photo
+                    .item-photo__label__type
+                        &.item-photo__label__type_slice
+                            width: 10px
+                            height: 28px
+                            line-height: 28px
+                            overflow: hidden
+                            padding: 0px 8px
+                        &.item-photo__label__type_roll
+                            width: 10px
+                            height: 28px
+                            line-height: 28px
+                            overflow: hidden
+                            padding: 0px 8px
+                    .item-photo__label
+                        &.item-photo__label_sale
+                            width: auto
+                            height: 28px
+                            line-height: 28px
+                            overflow: hidden
+                            padding: 0 8px
+                            .label__title
+                                display: none
+                        &.item-photo__label_new
+                            width: auto
+                            height: 28px
+                            line-height: 28px
+                            overflow: hidden
+                            padding: 0 8px
+                            .label__title
+                                display: none
+                            .label__title_mobile
+                                display: block
+                .item-order
+                    position: absolute
+                    bottom: 15px
+                    right: 0px
+                    .item-order-value
+                        display: none
+        .slider__title
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            text-align: center
+            color: #4F4F4F
+        .slider__more
+            display: none
+        .slider__more__mobile
+            display: block
+
+        .swiper-button-prev
+            left: 0px
+            top: 95px
+        .swiper-button-next
+            right: 0px
+            top: 95px

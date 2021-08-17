@@ -1,0 +1,196 @@
+.input-group-addon
+    padding: 6px 12px
+    font-size: 14px
+    font-weight: normal
+    color: #555
+    text-align: center
+    background-color: #eee
+    border: 1px solid #ccc
+    border-radius: 0px 4px 4px 0px
+    line-height: 25px
+    float: left
+    border-left: none
+
+.company-block-wrapper
+    display: none
+    &.show
+        display: block
+
+.basket-user-params
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    position: absolute
+    top: 30px
+    left: 150px
+    .item-params-param
+        padding: 4px 10px
+        border: 1px solid #EAEAEA
+        background: #ffffff
+        border-radius: 4px 0px 0px 4px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        color: #000000
+        margin-bottom: 0px
+        cursor: pointer
+        &:hover
+            background: linear-gradient(180deg, #F7F3F3 0%, #E2E2E2 100%) !important
+        &:last-child
+            border-radius: 0px 4px 4px 0px
+            border: 1px solid #EAEAEA
+            background: #ffffff
+        &:only-child
+            border-radius: 4px 4px 4px 4px
+            border: 1px solid #EAEAEA
+            background: #ffffff
+            &.active
+                padding: 4px 10px !important
+                background: linear-gradient(180deg, #F7F3F3 0%, #E2E2E2 100%) !important
+                border-radius: 4px 4px 4px 4px !important
+                font-style: normal !important
+                font-weight: normal !important
+                font-size: 14px !important
+                color: #000000 !important
+                margin-bottom: 0px !important
+                cursor: pointer !important
+        &.active
+            padding: 4px 10px
+            background: linear-gradient(180deg, #F7F3F3 0%, #E2E2E2 100%)
+            border-radius: 4px 0px 0px 4px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            color: #000000
+            margin-bottom: 0px
+            cursor: pointer
+            &:last-child
+                border-radius: 0px 4px 4px 0px
+
+
+.basket-blocks-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 120px
+    position: relative
+    margin-top: 60px
+    .basket-info-block
+        width: 70%
+        margin-right: 35px
+    .basketlineBox
+        width: 70%
+        margin-right: 35px
+
+.basket-total-block
+    position: sticky
+    right: 0px
+    top: 115px
+    padding: 26px 32px
+    max-width: 378px
+    width: 30%
+    height: max-content
+    border: 1px solid #BDBDBD
+    box-sizing: border-box
+    border-radius: 8px
+    .basket-total-items
+        margin-bottom: 28px
+        overflow: hidden
+    .basket-total-item
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 15px
+        position: relative
+        &::after
+            content: '...............................................................................................................................................................................'
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            text-align: right
+            letter-spacing: 0.24em
+            color: #4F4F4F
+            opacity: 0.32
+            position: absolute
+            bottom: 1px
+            left: 0px
+            right: 0px
+            z-index: 1
+        &:last-child
+            margin-bottom: 0px
+        .item__title
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            color: #000000
+            text-align: left
+            background: #ffffff
+            position: relative
+            z-index: 2
+        .item__value
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            text-align: right
+            color: #4F4F4F
+            background: #ffffff
+            position: relative
+            z-index: 2
+
+    .basket-total__title
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        color: #000000
+    .basket-total__value
+        font-style: normal
+        font-weight: 500
+        font-size: 36px
+        color: #000000
+
+    .basket-total__order__btn
+        width: 100%
+        height: 56px
+        line-height: 56px
+        background: #FEDC54
+        border-radius: 4px
+        border: none
+        outline: none
+        margin-top: 20px
+        margin-bottom: 8px
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        text-align: center
+        color: #2D3E69
+    .basket-total__oneclick__btn
+        width: 100%
+        height: 56px
+        line-height: 56px
+        background: #FFFFFF
+        border-radius: 4px
+        border: none
+        outline: none
+        font-style: normal
+        font-weight: bold
+        font-size: 15px
+        text-align: center
+        color: #2D3E69
+
+
+@media (min-width: 320px) and (max-width: 768px)
+    .basket-blocks-wrapper
+        flex-direction: column
+        .basketlineBox
+            width: 100%
+
+        .basket-total-block
+            position: relative
+            width: 100%
+            top: auto
+            left: auto
+            right: auto
+
+        .basket-info-block
+            width: 100%
+            margin-right: 0px
